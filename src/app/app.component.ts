@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(public httpClient: HttpClient){}
 
   sendGetRequest(){
-    this.httpClient.get('https://swapi.dev/api/people/1/').subscribe((res)=>{
+    this.httpClient.get('https://swapi.dev/api/').subscribe((res)=>{
         console.log(res);
     });
 }
